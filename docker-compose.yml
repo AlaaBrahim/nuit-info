@@ -1,0 +1,13 @@
+version: '3.9'
+
+
+services: 
+  react-terminal:
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    image: terminal
+    restart: unless-stopped
+    ports:
+      - '4020:4020'
+    
